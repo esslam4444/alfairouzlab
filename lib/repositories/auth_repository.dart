@@ -21,7 +21,7 @@ class AuthRepository {
       Get.back();
       if (e.response!.statusCode == 401 || e.response!.statusCode == 400) {
         Get.snackbar('خطأ في التسجيل الدخول', 'البريد الإلكتروني/رمز السري خاطئ',
-            titleText: null, backgroundColor: Const.primaryColor.withOpacity(0.4), colorText: Colors.white, snackPosition: SnackPosition.BOTTOM);
+            titleText: null, backgroundColor: Const.redColor.withOpacity(0.4), colorText: Colors.white, snackPosition: SnackPosition.BOTTOM);
       }
       return false;
     }

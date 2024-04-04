@@ -209,7 +209,12 @@ class SpecimenSearchView extends GetView<SpecimenSearchController> {
                );
              }).toList(),
            ),)
-                  :  const SizedBox(),
+                  :  Padding(
+                    padding: const EdgeInsets.all(50.0),
+                    child: SizedBox(child: Column( children: [
+                      Icon(Icons.qr_code_scanner_rounded,color: Colors.black12,size: 100,),
+                      Text('امسح كود العينة',style: TextStyle(color: Colors.black38,fontSize: 20),)],),),
+                  ),
                 ],
             ),
              ),

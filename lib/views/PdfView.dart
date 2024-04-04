@@ -22,7 +22,7 @@ class PdfView extends GetView<PdfViewController> {
         ),
         backgroundColor: Colors.green,
         actions: [    IconButton(
-          icon: const Icon(Icons.picture_as_pdf),
+          icon: const Icon(Icons.file_download),
           onPressed: () async {
             var specimenId=  specimenSearchController.specimen.id;
             final url = 'https://app.alfairouz.ly/api/public/specimen/report-colored/$specimenId'; // Replace with your PDF URL
